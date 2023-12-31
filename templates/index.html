@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Digits Game</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Digits Game</h1>
+    <div id="game-container">
+        <div id="instructions">
+            <p>Welcome to the Digits game!</p>
+            <p>You are given six numbers that you can add, subtract, multiply, or divide together to reach a goal number.</p>
+            <p>You get three stars if you reach the exact goal number, but if you’re close, you’ll get one or two stars.</p>
+        </div>
+        <div id="numbers">
+            <!-- Numbers will be dynamically inserted here -->
+        </div>
+        <div id="goal">
+            <!-- Goal will be dynamically inserted here -->
+        </div>
+        <div id="user-input">
+            <input type="number" id="num1" placeholder="Enter the first number">
+            <input type="number" id="num2" placeholder="Enter the second number">
+            <input type="text" id="operation" placeholder="Enter the operation (+, -, *, /)">
+            <button id="submit">Submit</button>
+        </div>
+        <div id="result">
+            <!-- Result will be dynamically inserted here -->
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='game.js') }}"></script>
+</body>
+</html>
